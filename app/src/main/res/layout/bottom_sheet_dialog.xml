@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/idIVCourse"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food" />
+
+        <TextView
+            android:id="@+id/idTVCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:text="Paket Makan Lengkap"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVCourseTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseName"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:text="Pesan makanan sekarang sebelum kehabisan"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/idTVCourseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVCourseTracks"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/idIVCourse"
+            android:text="Rp. 25.000,-"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVCourse"
+            android:layout_margin="10dp"
+            android:text="Dismiss dialog"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
